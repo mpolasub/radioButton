@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
 
     <RadioGroup
@@ -14,25 +14,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
 
         <RadioButton
+            android:background="@drawable/radio_selector"
             android:id="@+id/yesID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/yes" />
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:button="@color/transparent"
+            android:drawableTop="@mipmap/happy"
+            android:padding="12dp" />
 
         <RadioButton
+            android:background="@drawable/radio_selector"
             android:id="@+id/noID"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/no" />
+            android:layout_height="70dp"
+            android:button="@color/transparent"
+            android:drawableTop="@mipmap/sad"
+            android:padding="12dp" />
 
         <RadioButton
+            android:background="@drawable/radio_selector"
             android:id="@+id/maybeID"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/maybe" />
+            android:layout_height="70dp"
+            android:button="@color/transparent"
+            android:drawableTop="@mipmap/neutral"
+            android:padding="12dp" />
     </RadioGroup>
 
     <TextView
